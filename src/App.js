@@ -1,28 +1,6 @@
-const Hello = () => {
-  return React.createElement(
-    "div", // here this is just name of the tag
-    { class: "hello" }, // this just for set attribute
-    React.createElement(
-      // this is the place where you can put another tag or do what ever
-      "div",
-      { id: "inner div of the hello" },
-      React.createElement(
-        "p",
-        { class: "this is para" },
-
-        "some content inside the paragraph" //here I am putting teh content inside the paragraph tag
-      )
-    )
-  );
-};
-
-const Fruits = (props) => {
-  return React.createElement("div", { class: "fruit-list" }, [
-    React.createElement("h1", {}, props.name),
-    React.createElement("p", {}, props.description),
-    React.createElement("h3", {}, props.price),
-  ]);
-};
+import React from "react";
+import { createRoot } from "react-dom/client";
+import Fruits from "./fruits";
 
 const App = () => {
   return React.createElement("div", {}, [
@@ -54,5 +32,4 @@ const App = () => {
 };
 
 const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
 root.render(React.createElement(App));
