@@ -9,9 +9,10 @@ const Hello = () => {
       React.createElement(
         "p",
         { class: "this is para" },
-        "some content inside the paragraph", //here I am putting teh content inside the paragraph tag
-      ),
-    ),
+
+        "some content inside the paragraph" //here I am putting teh content inside the paragraph tag
+      )
+    )
   );
 };
 

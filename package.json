@@ -16,5 +16,13 @@
     "url": "https://github.com/santoshxshrestha/xjs/issues"
   },
   "homepage": "https://github.com/santoshxshrestha/xjs#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
 }
